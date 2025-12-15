@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import CryptoJS from 'crypto-js';
-import { Gift, ArrowRight, Snowflake } from 'lucide-react';
+import { Gift, ArrowRight, Snowflake, Lightbulb } from 'lucide-react';
+import RecommendationsModal from '../components/RecommendationsModal';
 
 export default function Landing() {
     const [key, setKey] = useState('');
     const [error, setError] = useState('');
+    const [showRecs, setShowRecs] = useState(false);
     const navigate = useNavigate();
 
     const handleReveal = (e) => {
@@ -72,6 +74,16 @@ export default function Landing() {
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </motion.button>
                 </form>
+
+                <div className="mt-6 pt-6 border-t border-slate-700/50">
+                    <button
+                        onClick={() => setShowRecs(true)}
+                        className="w-full py-2 bg-slate-700/30 hover:bg-slate-700/50 rounded-lg transition-all flex items-center justify-center gap-2 text-slate-400 hover:text-white text-sm"
+                    >
+                        <Lightbulb className="w-4 h-4" />
+                        Need Inspiration?
+                    </button>
+                </div>
             </motion.div>
 
             {/* Decorative Snowflakes */}
@@ -101,6 +113,8 @@ export default function Landing() {
                     </motion.div>
                 ))}
             </div>
+
+            <RecommendationsModal isOpen={showRecs} onClose={() => setShowRecs(false)} />
         </div>
     );
 }
