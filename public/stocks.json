@@ -1,0 +1,20 @@
+[
+  {
+    "participant": "Alice",
+    "stockSymbol": "AAPL",
+    "entryPrice": 150,
+    "entryDate": "2025-01-01",
+    "currentPrice": 278.28,
+    "performance": 85.52,
+    "lastUpdated": "2025-12-15T10:29:07.352Z"
+  },
+  {
+    "participant": "Bob",
+    "stockSymbol": "MSFT",
+    "entryPrice": 300,
+    "entryDate": "2025-01-01",
+    "currentPrice": 478.53,
+    "performance": 59.51,
+    "lastUpdated": "2025-12-15T10:29:07.424Z"
+  }
+]

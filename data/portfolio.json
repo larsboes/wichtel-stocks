@@ -1,0 +1,20 @@
+[
+  {
+    "participant": "Alice",
+    "stockSymbol": "AAPL",
+    "entryPrice": 150,
+    "entryDate": "2025-01-01"
+  },
+  {
+    "participant": "Bob",
+    "stockSymbol": "MSFT",
+    "entryPrice": 300,
+    "entryDate": "2025-01-01"
+  },
+  {
+    "participant": "TestUser",
+    "stockSymbol": "TEST",
+    "entryPrice": 100,
+    "entryDate": "2025-12-15"
+  }
+]

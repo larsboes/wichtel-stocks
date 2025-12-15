@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-christmas-red: #D42426;
+  --color-christmas-green: #165B33;
+  --color-snow-white: #F8F8FF;
+  --color-stock-up: #10B981;
+  --color-stock-down: #EF4444;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-white antialiased;
+  }
+}
